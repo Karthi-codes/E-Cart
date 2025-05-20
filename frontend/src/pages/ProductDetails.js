@@ -29,7 +29,7 @@ function Add_to_Cart(){
 
 function increase(){
 
-    if(product.stock==qty){
+    if(product.stock===qty){
         return;
     }
     setQty((state)=>state + 1)

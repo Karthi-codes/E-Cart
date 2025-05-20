@@ -34,9 +34,9 @@ export default function Cart({ cartItem, setCartItem }) {
     function removeitem(item) {
 
         const updateitem = cartItem.filter((i) => {
-            if (i.product._id !== item.product._id) 
-                return true;
-        })
+            return i.product._id !== item.product._id;
+                // return true;
+        });
         return setCartItem(updateitem)
     }
 

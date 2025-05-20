@@ -24,3 +24,13 @@ exports.order = async(req,res,next)=>{
         orders
     })
 }
+
+exports.home = async(req,res)=>{
+    try {
+        res.status(200).json({message:"Welcome to backend"})
+    } catch (error) {
+        res.status(404).json({error:"404 Not Found"})
+        console.log("Internal Server error in Home");
+        
+    }
+}

@@ -15,7 +15,7 @@ export default function Productcard({cartItem, setCartItem})
 useEffect(()=>{
     fetch(process.env.REACT_APP_API_URL+"/product/"+id)
     .then(res=>res.json())
-    .then(res=>setProduct(res. getsingleProduct))
+    .then(res=>setProduct(res.getsingleProduct))
 },[id]);
 
 function Add_to_Cart(){
@@ -81,7 +81,7 @@ return(
             <h4 className="mt-2">Description:</h4>
             <p>{product.description}</p>
             <hr/>
-            <p id="product_seller mb-3">Sold by: <strong>{product.seller} </strong></p>
+            <p id="product_seller mb-3">Sold by: <strong>{product.seller}</strong></p>
             
             <div className="rating w-50"></div>
                     

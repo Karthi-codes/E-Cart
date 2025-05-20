@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 
 export default function Home() {
   const [Products, setProducts] = useState([]);
-  const [searchparams,setSearchparams] = useSearchParams();
+  const [searchparams] = useSearchParams();
 
   useEffect(() => {
     fetch(process.env.REACT_APP_API_URL + "/product?" + searchparams)

@@ -70,7 +70,7 @@ return(
 
                 <span className="btn btn-primary plus" onClick={increase}>+</span>
             </div>
-             <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={product.stock==0} onClick={Add_to_Cart}>Add to Cart</button>
+             <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={product.stock===0} onClick={Add_to_Cart}>Add to Cart</button>
 
             <hr/>
 
